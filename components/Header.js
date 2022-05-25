@@ -24,6 +24,25 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <nav className={styles.togglemenu}>
+        <div className={styles.burger}>
+          <div className={styles.burgerline}></div>
+          <div className={styles.burgerline}></div>
+          <div className={styles.burgerline}></div>
+        </div>
+        <ul>
+          <li>
+            <Link href='/events'>
+              <a>Events</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/about'>
+              <a>About</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
