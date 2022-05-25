@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href='/'>
-          <a>Logo</a>
+          <a>Home</a>
         </Link>
       </div>
       <nav className={styles.menu}>
@@ -24,12 +24,12 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div className={styles.burger}>
+        <div className={styles.burgerline}></div>
+        <div className={styles.burgerline}></div>
+        <div className={styles.burgerline}></div>
+      </div>
       <nav className={styles.togglemenu}>
-        <div className={styles.burger}>
-          <div className={styles.burgerline}></div>
-          <div className={styles.burgerline}></div>
-          <div className={styles.burgerline}></div>
-        </div>
         <ul>
           <li>
             <Link href='/events'>
