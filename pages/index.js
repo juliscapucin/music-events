@@ -7,8 +7,15 @@ import styles from "../styles/Home.module.scss";
 export default function Home({ hero }) {
   return (
     <Layout className={styles.container}>
-      <h1>Home</h1>
       <Showcase url={hero.sourceUrl} />
+      <div className={styles.info}>
+        <h1>Weval</h1>
+        <h3>30 jun @Paradiso 20:00</h3>
+        <p>
+          Text about the band and details on the new album. band and details on
+          the new album. On june 2022 at 22h.
+        </p>
+      </div>
     </Layout>
   );
 }
